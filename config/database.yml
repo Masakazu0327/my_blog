@@ -51,5 +51,5 @@ production:
   <<: *default
   host: <%= Rails.application.credentials.aws[:rds_host] %>
   database: my_blog_production
-  username: my_blog
+  username: <%= Rails.application.credentials.database[:user_name] %>
   password: <%= Rails.application.credentials.database[:user_password] %>
