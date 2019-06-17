@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyBlog</title>
+    <title>My_blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -14,17 +14,13 @@
       <div class="container">
         <!-- ★★★★下記の#を後ほど正しいURLに変更 -->
         <%# <a class="navbar-brand" href="#">My blog</a> %>
-        <%= link_to "My blog", root_path, class: "navbar-brand" %>
+        <%= link_to "My_blog", root_path, class: "navbar-brand" %>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="ナビゲーションの切替">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <!-- ★★★★下記の#を後ほど正しいURLに変更 -->
-              <%# <a class="nav-link" href="#">投稿する</a> %>
-                <%= link_to "投稿する", new_post_path, class: "nav-link" %>
-            </li>
+            <%= link_to "投稿する", new_post_path, class: "nav-link" %>
           </ul>
         </div>
       </div>
